@@ -8,16 +8,10 @@ Welcome to first-notes's documentation!
 
 .. toctree::
    :caption: Tutorial
-   :maxdepth: 2
-   :numbered:
+   :maxdepth: 3
 
    using-rst/tutorial
 
-.. toctree:: 
-   :caption: PDP Template documentation
-   :maxdepth: 2
-
-   using-rst/pdp-template-rst
 
 
 Indices and tables

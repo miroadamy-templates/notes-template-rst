@@ -77,10 +77,10 @@ Docker start
 Docker cheatsheet
 -----------------
 
-.. code:: bash
+.. code::
 
-    docker run --rm -it -v `pwd`/first-rst:/doc -e USER_ID=$UID ddidier/sphinx-doc:2.2.1-1 bash
-    docker run --rm -it -v `pwd`/first-rst:/doc -e USER_ID=$UID ddidier/sphinx-doc:2.2.1-1 make html
+    docker run --rm -it -v `pwd`:/doc -e USER_ID=$UID ddidier/sphinx-doc:2.2.1-1 bash
+    docker run --rm -it -v `pwd`:/doc -e USER_ID=$UID ddidier/sphinx-doc:2.2.1-1 make html
     python -m http.server --directory first-rst/_build/html
 
 
@@ -120,3 +120,4 @@ Links on RestructuredText (Sphinx)
 - https://digitalsuperpowers.com/blog/2019-02-16-publishing-ebook.html
 - https://restructuredtext.readthedocs.io/en/latest/
 - https://pedrokroger.net/using-sphinx-write-technical-books/
+- https://scm-stv.readthedocs.io/about/pdp-template-rst.html
